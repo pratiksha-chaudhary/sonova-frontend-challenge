@@ -6,7 +6,7 @@
     align-items: center;
     background-image: url('https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/bbdfbb90-gottschalk-verstehen-clean-1370-1_10xc0ir000000000000000.jpg');
     color: $sonova-white;
-    height: 228px;
+    height: 14.25rem;
     width: 100%;
     @include from-medium() {
         background-image: url('https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/0661db1f-gottschalk-footer_11hc0h7000000000000000.jpg');
@@ -28,11 +28,11 @@
         }
 
         .quote-logo > img {
-            width: 40px;
+            width: 2.5rem;
             margin-right: 1rem;
             
             @include from-medium() {
-                width: 50px;
+                width: 3.125rem;
             }
         }
 

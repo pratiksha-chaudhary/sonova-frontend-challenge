@@ -1,4 +1,4 @@
-@import '../../styles';
+@import "../../styles";
 
 .Banner {
     width: 100vw;
@@ -17,12 +17,12 @@
     }
 
     .brand-cover-small {
-        background-image: url('https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/f43896e0-zdf-hero-image-woman-virto-m-titanium-mobile-v1_10000000go0af00000c000.jpg');
-        height: 200px;
+        background-image: url("https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/f43896e0-zdf-hero-image-woman-virto-m-titanium-mobile-v1_10000000go0af00000c000.jpg");
+        height: 12.5rem;
         width: 100%;
 
         @include from-small() {
-            height: 300px;
+            height: 18.75rem;
         }
         @include from-medium() {
             display: none;
@@ -31,29 +31,38 @@
 
     .sales-background {
         display: flex;
+
         @include from-medium() {
-            height: 45vh;
-            background-image: url('https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/6697c9d2-zdf-hero-image-woman-virto-m-titanium-v1_11hc0qw000000000000000.jpg');
+            height: 21.25rem;
+            background-image: url("https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/6697c9d2-zdf-hero-image-woman-virto-m-titanium-v1_11hc0qw000000000000000.jpg");
         }
+
         @include from-large() {
-            height: 500px;
-            background-image: url('https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/6697c9d2-zdf-hero-image-woman-virto-m-titanium-v1_11hc0qw000000000000000.jpg');
+            height: 31.25rem;
         }
+
         .sales-pitch {
             padding: 1.5rem 2.5%;
             background: $sonova-white;
             @include from-medium() {
                 width: 40%;
-                margin: 2rem;
+                margin: 1.5rem;
                 margin-left: 50vw;
             }
 
             @include from-large() {
                 width: 37%;
-                margin: 3rem;
+                margin: 2rem;
                 margin-left: 50vw;
                 padding: 3rem 3%;
             }
+
+            @include from-extra-large() {
+                margin: 2rem;
+                margin-left: 50vw;
+                padding: 2rem 3%;
+            }
+
             .intro {
                 font-size: 1.3rem;
                 line-height: 2rem;
@@ -61,17 +70,31 @@
                     font-size: 2rem;
                     line-height: 3rem;
                 }
+
+                @include from-extra-large() {
+                    font-size: 1.95rem;
+                    line-height: 3rem;
+                    margin-bottom: 2.5rem;
+                }
             }
 
             .award-logos {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 2rem;
+                margin-top: 1.5rem;
                 width: 100%;
+
+                @include from-medium() {
+                    margin-top: 2rem;
+                }
+
+                @include from-extra-large() {
+                    margin-top: 3.5rem;
+                }
 
                 .quality-logo {
                     margin: 0 0.3rem;
-                    height: 45px;
+                    height: 2.8125rem;
                 }
 
                 .quality-logo.wide {
