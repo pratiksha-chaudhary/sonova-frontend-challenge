@@ -1,0 +1,28 @@
+@import './styles/media-queries.scss';
+
+.App {
+  text-align: center;
+}
+
+.main-app-placement {
+  width: 95%;
+  margin: 2vh auto;
+
+  @include from-medium() {
+    width: 80%;
+  }
+
+  @include from-large() {
+    width: 60%;
+  }
+
+  @include from-extra-large() {
+    width: 60%;
+  }
+}
+
+.cover-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

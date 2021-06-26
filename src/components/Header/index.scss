@@ -1,0 +1,33 @@
+@import '../../styles';
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+
+    img {
+        height: 28px;
+    }
+    .contact {
+        color: $green;
+        .phone-number {
+            font-size: 1.3rem;
+            font-weight: 500;
+
+            @include from-small() {
+                font-size: 1.7rem;
+            }
+        }
+
+        .open-hours {
+            font-size: 0.7rem;
+            text-align: right;
+            display: none;
+            @include from-medium() {
+                font-size: 1rem;
+                display: block;
+            }
+        }
+    }
+}

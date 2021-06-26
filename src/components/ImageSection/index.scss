@@ -1,0 +1,33 @@
+@import '../../styles';
+
+.ImageSection {
+    display: flex;
+    flex-direction: column;
+
+    @include from-medium() {
+        flex-direction: row;
+    }
+
+    img {
+        width: 100%;
+        @include from-medium() {
+            min-width: 50%;
+        }
+    }
+
+    .description {
+        padding: 1rem 1.5rem 3rem;
+        background: $sonova-white;
+        text-align: left;
+
+        p {
+            padding: 1rem 0;
+        }
+    }
+}
+
+.ImageSection.image-later {
+    @include from-medium() {
+        flex-direction: row-reverse;
+    }
+}

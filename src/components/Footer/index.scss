@@ -1,0 +1,17 @@
+@import '../../styles/';
+
+.Footer {
+    background: $dark-grey;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    color: $sonova-white;
+    .copyright {
+        display: none;
+
+        @include from-medium() {
+            display: block;
+        }
+    }
+}

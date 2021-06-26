@@ -1,0 +1,57 @@
+@import '../../styles';
+
+.Testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/bbdfbb90-gottschalk-verstehen-clean-1370-1_10xc0ir000000000000000.jpg');
+    color: $sonova-white;
+    height: 228px;
+    width: 100%;
+    @include from-medium() {
+        background-image: url('https://d9hhrg4mnvzow.cloudfront.net/info.geers.de/zdf/0661db1f-gottschalk-footer_11hc0h7000000000000000.jpg');
+        height: 23vh;
+    }
+
+    @include from-large() {
+        height: 40vh;
+    }
+
+    .container {
+        display: flex;
+        text-align: left;
+        padding-top: 1rem;
+        margin: 0 1rem;
+        line-height: 1.5rem;
+        @include from-medium() {
+            margin: 1rem;
+        }
+
+        .quote-logo > img {
+            width: 40px;
+            margin-right: 1rem;
+            
+            @include from-medium() {
+                width: 50px;
+            }
+        }
+
+        .quote {
+            @include from-small() {
+                max-width: 55%;
+            }
+
+            @include from-medium() {
+                max-width: 40%;
+            }
+
+            @include from-large() {
+                max-width: 30%;
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

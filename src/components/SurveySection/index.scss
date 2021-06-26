@@ -1,0 +1,41 @@
+@import '../../styles/';
+
+.SurveySection {
+    .heading {
+        text-align: left;
+        max-width: 70%;
+        line-height: 1.8rem;
+        margin: 2rem 0 1rem;
+
+        @include from-large() {
+            font-size: 2rem;
+            margin: 4rem 0 2rem;
+        }
+    }
+    .container {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        @include from-medium() {
+            flex-direction: row;
+        }
+        .asterisk-content {
+            margin: 0.3rem 0;
+            font-size: 0.9rem;
+            width: 50vw;
+            color: $black;
+            text-align: left;
+
+            @include from-small() {
+                width: block;
+            }
+
+            @include from-medium() {
+                margin-top: 45%;
+                font-weight: 400;
+            }
+        }
+    }
+}

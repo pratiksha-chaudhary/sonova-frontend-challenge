@@ -1,0 +1,37 @@
+@import '../../styles';
+
+.Benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+
+    @include from-medium() {
+        flex-direction: row;
+    }
+
+    .benefit-list {
+        text-align: left;
+
+        @include from-small() {
+            min-width: 50%;
+        }
+    }
+
+    .guarantee-container {
+        width: 100%;
+        margin-top: 2rem;
+        @include from-medium() {
+            padding: 0 1rem;
+        }
+
+        .guarantee {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+            img {
+                width: 80px;
+            }
+        }
+    }
+}
